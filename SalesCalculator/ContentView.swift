@@ -22,12 +22,15 @@ struct ContentView: View {
             HStack{
                 Text("Before Tax Price")
                     .foregroundStyle(.red)
+                    .bold()
                 TextField("$0", text: $beforeTaxPrice)
                     .keyboardType(/*@START_MENU_TOKEN@*/.decimalPad/*@END_MENU_TOKEN@*/)
             }
             .padding(.top, 40.0)
             HStack{
                 Text("Sales Tax Rate")
+                    .foregroundStyle(.red)
+                    .bold()
                 TextField("$0", text: $salesTaxRate)
                     .keyboardType(/*@START_MENU_TOKEN@*/.decimalPad/*@END_MENU_TOKEN@*/)
             }
@@ -35,6 +38,8 @@ struct ContentView: View {
             
             HStack{
                 Text("After Tax Price")
+                    .foregroundStyle(.red)
+                    .bold()
                 TextField("$0", text: $afterTaxPrice)
                     .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             }
